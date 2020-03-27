@@ -1,0 +1,88 @@
+img {
+    display: block;
+}
+
+.container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: solid;
+}
+
+.photo img {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+}
+
+.personal-info {
+    width: 300px;
+    text-align: center;
+}
+
+.education {
+    margin-top: 50px;
+    background-color: #FFB6C1;
+    border-radius: 0px 0px;
+    border: dashed;
+
+}
+
+.text {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.sign .bad-sign {
+    display: none;
+}
+
+.sign:hover .bad-sign {
+    display: inline-block;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: solid;
+    padding: 0;
+    background-color: #FFB6C1;
+}
+
+#navbar li {
+    text-align: center;
+    display: inline;
+    flex: 1;
+}
+
+#navbar li:last-child a {
+    border-right: none;
+}
+
+#navbar a {
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    border-right: solid;
+}
