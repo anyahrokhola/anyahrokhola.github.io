@@ -59,6 +59,13 @@ strong {
     background-color: var(--text-color);
 }
 
+.separetor {
+    margin: 30px 0;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0.7;
+}
 
 .with-lines .content {
     width: 100%;
@@ -153,8 +160,13 @@ strong {
     scroll-behavior: smooth;
 }
 
-.resume-item {
+.resume>div:first-child {
     padding-top: 20px;
+    margin-top: 0;
+}
+
+.resume-item {
+    margin-top: 20px;
 }
 
 .resume-item>* {
@@ -187,7 +199,6 @@ strong {
     transition: background-color 150ms ease-in;
 }
 
-.resume-portfolio a:hover{
+.resume-portfolio a:hover {
     background-color: var(--panel-bg-color);
-
 }
