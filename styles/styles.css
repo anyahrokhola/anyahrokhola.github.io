@@ -15,6 +15,9 @@ body {
     margin: 0;
 }
 
+a{
+    color: #FBFFC2;
+}
 
 img {
     display: block;
