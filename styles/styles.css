@@ -1,12 +1,12 @@
 :root {
-  --main-bg-color: #1B1548;
-  --panel-bg-color: #1B215A;
+    --main-bg-color: #1B1548;
+    --panel-bg-color: #1B215A;
 
-  --heading-color: #7BFBFE;
-  --heading-color-hover: #009999;
+    --heading-color: #7BFBFE;
+    --heading-color-hover: #009999;
 
-  --text-color: #FBFFC2;
-  --text-color-hover: var(--heading-color);
+    --text-color: #FBFFC2;
+    --text-color-hover: var(--heading-color);
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-a{
+a {
     color: #FBFFC2;
 }
 
@@ -55,7 +55,7 @@ strong {
 .line {
     width: 100%;
     height: 3px;
-    margin-top: 5px; 
+    margin-top: 5px;
     background-color: var(--text-color);
 }
 
@@ -96,7 +96,7 @@ strong {
     transition: color 150ms ease-out;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: var(--heading-color-hover);
 }
 
@@ -150,12 +150,44 @@ strong {
     background-color: var(--panel-bg-color);
     height: calc(100vh - 40px - 60px);
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
-.sign .bad-sign {
-    display: none;
+.resume-item {
+    padding-top: 20px;
 }
 
-.sign:hover .bad-sign {
-    display: inline-block;
+.resume-item>* {
+    margin-top: 0;
+}
+
+.resume-portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.resume-portfolio li {
+    width: calc(50% - 12px);
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+.resume-portfolio a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color 150ms ease-in;
+}
+
+.resume-portfolio a:hover{
+    background-color: var(--panel-bg-color);
+    
 }
