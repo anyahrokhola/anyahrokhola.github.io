@@ -60,7 +60,7 @@ strong {
 }
 
 .separetor {
-    margin: 30px 0;
+    margin: 10px 0;
     height: 2px;
     border-radius: 50%;
     background-color: var(--text-color);
@@ -166,11 +166,20 @@ strong {
 }
 
 .resume-item {
-    margin-top: 20px;
+    position: relative;
+    padding: 10px 0;
 }
 
 .resume-item>* {
     margin-top: 0;
+}
+
+.resume-item > h2 {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 10px 0;      
+    background-color: var(--panel-bg-color);
 }
 
 .resume-portfolio ul {
