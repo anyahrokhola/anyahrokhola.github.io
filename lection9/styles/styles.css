@@ -1,0 +1,56 @@
+:root {
+    --icon-size: 100px;
+}
+
+.container {
+    width: 900px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-link-icon {
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-right: 5px;
+    background-image: url(../images/sprite_icons.png);
+    background-size: calc(var(--icon-size) * 2);
+    transition: transform 150ms;
+}
+
+.social-link-icon:hover {
+    transform: translateY(-20px);
+}
+
+.social-facebook-icon {	
+    background-position: var(--icon-size) 0px;
+}
+
+.social-tiktok-icon {
+    background-position: calc(var(--icon-size) * 2) var(--icon-size);
+}
+
+.social-vk-icon {
+    background-position: var(--icon-size) var(--icon-size);
+}
+
+.social-instagram-icon {
+    background-position: 0px 0px;
+}

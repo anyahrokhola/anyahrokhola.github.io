@@ -140,3 +140,7 @@ body{
 	text-align:center;
 	line-height: 55px;
 }
+
+.btn:hover{
+	color: grey;
+}
