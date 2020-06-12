@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>CSS3 Transitions and Animations — Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+    
+    <body>
+        
+        <h2>Concert Map</h2>
+        
+        <div id="concert-map" class='concert-map'>
+            <div class="pin madrid">
+                <span class="town">Madrid</span>
+                <div class="popover">
+                    <p class="place">Wizink Center</p>
+                    <p class="date">October 7, 2017</p>
+                    <a class="button" href="#buy">Buy tickets</a>
+                </div>
+            </div>
+            
+            <div class="pin turin">
+                <span class="town">Turin</span>
+                <div class="popover">
+                    <p class="place">Pala Alpitour</p>
+                    <p class="date">October 14, 2017</p>
+                    <a class="button" href="#buy">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin hamburg">
+                <span class="town">Hamburg</span>
+                <div class="popover">
+                    <p class="place">Barclaycard Arena</p>
+                    <p class="date">November 6, 2017</p>
+                    <a class="button" href="#buy">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin krakow">
+                <span class="town">Kraków</span>
+                <div class="popover">
+                    <p class="place">Tauron Arena</p>
+                    <p class="date">November 12, 2017</p>
+                    <a class="button" href="#buy">Buy tickets</a>
+                </div>
+            </div>
+        </div>
+        <form action="#" class="buy_form" id="buy">
+            <legend><span>Buy tickets</span></legend>
+            <label>Enter your name:</label>
+            <input type="text" placeholder="Name">
+            <label>Enter your phone number:</label>
+            <input type="tel" placeholder="Phone number">
+            <label>Enter your email:</label>
+            <input type="email" placeholder="Email">
+            <label>Choose city:</label>
+            <select size="1" >
+                  <option>Madrid</option>
+                  <option>Turin</option>
+                  <option>Hamburg</option>
+                  <option>Kraków</option>
+            </select>
+            <button><span>Submit</span></button>
+        </form>
+    </body>
+</html>
